@@ -107,6 +107,7 @@
 }
 .input-group a{
     display: inline-block;
+    margin-bottom: 15px;
     text-decoration: none;
     color: #777;
     color: 30px 10px 30px 0px;
