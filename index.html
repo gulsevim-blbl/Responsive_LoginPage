@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="form-box">
+        <div id="btn "></div>
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">
+            Log In
+          </button>
+          <button type="button" class="toggle-btn" onclick="register()">
+            Register
+          </button>
+        </div>
+        <div class="social-icons">
+          <lottie-player
+            src="https://lottie.host/f81c7f58-3a03-484f-84f9-b5198ad1088f/t1oIIU2842.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+            direction="1"
+            mode="normal"
+          ></lottie-player>
+          <lottie-player
+            src="https://lottie.host/89ed3346-4655-44c2-b5c8-023870bf8886/QM3EUOvxVG.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+          ></lottie-player>
+          <lottie-player
+            src="https://lottie.host/7c976f49-59f4-4823-9b8d-621c49cc3711/hfl49qcNjd.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+            direction="1"
+            mode="normal"
+          ></lottie-player>
+          <lottie-player
+            src="https://lottie.host/72d2a13d-9187-439b-9fbd-b13c4e00a968/NpL5qf30o3.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+            direction="1"
+            mode="normal"
+          ></lottie-player>
+        </div>
+        <form id="Login" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Enter Username"
+            required
+          />
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Enter Password"
+            required
+          />
+          <a href="#">Lost Your Password</a>
+          <button type="submit" class="submit-btn">Login</button>
+        </form>
+        <form id="Register" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Enter Username"
+            required
+          />
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Enter Surname"
+            required
+          />
+          <input
+            type="email"
+            class="input-field"
+            placeholder="Enter Email"
+            required
+          />
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Enter Password"
+            required
+          />
+          <a href="#"
+            >By registering, you agree to the Teras, Data Policy and Cookies
+            Policy.
+          </a>
+          <button type="submit" class="submit-btn">Register</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      const x = document.getElementById("Login");
+      const y = document.getElementById("Register");
+      const z = document.getElementById("btn");
+
+      function register() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+      }
+      function login() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+      }
+    </script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </body>
+</html>
